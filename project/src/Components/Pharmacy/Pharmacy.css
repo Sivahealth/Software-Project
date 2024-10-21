@@ -1,0 +1,26 @@
+.status-btn {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+   
+  }
+  
+  /* Status-specific colors */
+  .status-btn.in-stock {
+    background-color: green;
+  }
+  
+  .status-btn.expired {
+    background-color: red;
+  }
+  
+  .status-btn.discontinued {
+    background-color: purple;
+  }
+  
+  /* Optionally add hover effects */
+  .status-btn:hover {
+    opacity: 0.9;
+  }

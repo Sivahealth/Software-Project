@@ -1,0 +1,280 @@
+.add_appointment_white-rectangle1{
+    background-color: white; /* Set background color to white */
+    width: 1107px; /* Set the width of the rectangle */
+    height: 600px; /* Set the height of the rectangle */
+    position:absolute; /* Use absolute positioning */
+    top: 50%; /* Center vertically */
+    left: 60px; /* Center horizontally and add offset */
+    transform: translateY(-50%); /* Center vertically */
+    border: 1px solid black; /* Optional: add a border to make it visible*/
+    border-radius: 20px;
+    font-family:'Outfit',sans-serif;
+    color: #000;
+}
+
+.Add_appointment_logo_Container{
+    position: absolute;
+    display: flex;
+    width: 250px;
+    height: 130px;
+    background-color: #ffffff; 
+    justify-content: center;
+    left: 840px;
+    top:29.5px;
+}
+
+.appointment_logo{
+    position: absolute;
+    width: 102px; /* Example width of the image */
+    height: 92px; /* Maintain aspect ratio */
+}
+
+.Add_appointment_Optimize-text{
+   margin-top:89px;
+   font-size: 22px;
+   font-weight: bold;
+   color: #000;
+}
+
+.appointment_text_container{
+   /* background-color: rgb(229, 31, 31); /* Set background color to white */
+    width: 1107px; /* Set the width of the rectangle */
+    height: 600px;
+    display: flex;
+    position: absolute;
+    margin-top:25px;
+
+
+}
+.appointment-title{
+    font-size: 20px;
+    margin-top:30px;
+    margin-left:49px;
+    color: #000;
+  }
+
+  .input-group2 {
+    position: absolute;
+    display: flex;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    margin-top: 82px;
+    font: size 2px;
+    left: 49px;;
+  }
+
+  .label2 {
+    width: 200px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    background-color: #ffffff;
+  }
+
+  .label3 {
+    width: 444px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+  }
+
+  .label4 {
+    position:absolute;
+    top:354px;
+    left:49px;
+    width: 444px;
+    font-size: 16px;
+    height:10px;
+    background-color: #ffffff;
+  }
+
+  .label5{
+    position:absolute;
+    top:464px;
+    left:49px;
+    width: 444px;
+    font-size: 16px;
+    height:10px;
+    background-color: #ffffff;
+  }
+
+  input[type="text1"],
+  input[type="password1"] {
+    position: absolute;
+    flex: 1;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top:20px;
+    font-family:'Outfit',sans-serif;
+  }
+
+  input[type="text2"],
+  input[type="password1"] {
+    position: absolute;
+    flex: 1;
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top:20px;
+    font-family:'Outfit',sans-serif;
+  }
+
+
+
+  .input-group3 {
+    position: absolute;
+    display: flex;
+    background-color: aquamarine;
+    margin-bottom: 20px;
+    margin-top: 82px;
+    font: size 2px;
+    left: 262px;
+  }
+
+  .dob-group{
+    position: absolute;
+    display: flex;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    margin-top: 150px;
+    font: size 2px;
+    left: 49px;;
+  }
+
+  .dob-group1{
+    position: absolute;
+    display: flex;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    margin-top:150px;
+    font: size 2px;
+    left: 262px;
+  }
+
+  .dob-group2{
+    position: absolute;
+    display: flex;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    margin-top:150px;
+    font: size 2px;
+    left: 475px;
+  }
+  .gender-group{
+    position: absolute;
+    display: flex;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    margin-top:218px;
+    font: size 2px;
+    left: 49px;
+  }
+
+  .select1{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    position: absolute;
+    padding:10px;
+    margin-top:20px;
+    font-family:'Outfit',sans-serif;
+  }
+
+  .age-group{
+    position: absolute;
+    display: flex;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    margin-top:218px;
+    font: size 2px;
+    left:262px;
+  }
+
+  .mail-group{
+    position: absolute;
+    display: flex;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    margin-top:218px;
+    font: size 2px;
+    left:475px;
+  }
+
+  .address-group{
+    position: absolute;
+    display: flex;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    margin-top:286px;
+    font: size 2px;
+    left: 49px;
+  }
+
+  .city-group{
+    position: absolute;
+    display: flex;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    margin-top:286px;
+    font: size 2px;
+    left: 506px;
+  }
+
+  .province-group{
+    position: absolute;
+    display: flex;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    margin-top:286px;
+    font: size 2px;
+    left: 719px;
+
+  }
+
+  .select-department{
+    position: absolute;
+    display: flex;
+    background-color:#ffffff;
+    margin-bottom: 20px;
+    margin-top:380px;
+    width: 100px;
+    font: 2px;
+    left: 49px;
+  }
+
+  .contact-group{
+    position: absolute;
+    display: flex;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    margin-top:360px;
+    font: size 2px;
+    left: 506px;
+  }
+
+  .submit-button {
+    display:flex;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #D50202;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    
+    
+  }
+
+  .button-container{
+    position: absolute;
+    margin-top:480px ;
+    margin-left: 49px;
+  }
+
+  .submit-button:hover{
+    background-color: #45a049;
+  }

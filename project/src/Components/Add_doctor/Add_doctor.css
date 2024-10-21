@@ -1,0 +1,17 @@
+.getleft-group{
+    position: absolute;
+    left: -100px;
+    top: 30px;
+}
+
+.getright-group{
+    position: absolute;
+    top: 120px;
+    left:430px;
+}
+
+.adddoctor-white-rectangle2{
+    position: absolute;
+    top:450px;
+    left:900px;
+}

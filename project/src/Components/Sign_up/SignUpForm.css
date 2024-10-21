@@ -1,0 +1,134 @@
+/* SignUpForm.css */
+body{
+    background-color:#6F75DE;
+}
+.blue-rectangle1{
+
+    background-color: #3237A7; /* Change the color to blue */
+    color: white;
+    padding: 10px;
+    width: 1192px; /* Set a width for the rectangle */
+    height: 600px; /* Set a height for the rectangle */
+    position: absolute; /* Use absolute positioning */
+    top: 50%; /* Move to the center vertically */
+    left: 50%; /* Move to the center horizontally */
+    transform: translate(-50%, -50%); /* Offset by half of its width and height to center it */
+    border-radius: 30px;
+  }
+
+  .white-rectangle1{
+
+    background-color: white; /* Set background color to white */
+    width: 1093px; /* Set the width of the rectangle */
+    height: 558px; /* Set the height of the rectangle */
+    position:absolute; /* Use absolute positioning */
+    top: 50%; /* Center vertically */
+    left: 60px; /* Center horizontally and add offset */
+    transform: translateY(-50%); /* Center vertically */
+    border: 1px solid black; /* Optional: add a border to make it visible*/
+    border-radius: 20px;
+
+}
+
+.white-rectangle2{
+
+  background-color: #ffffff; /* Set background color to white */
+  margin-top:450px;
+  margin-left:700px ;
+  width: 350px; /* Set the width of the rectangle */
+  height: 20px; /* Set the height of the rectangle */
+  position:absolute; /* Use absolute positioning */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Center vertically */
+
+}
+
+
+.root-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .signup-container {
+    position: absolute; /* Position the container absolutely */
+    color:#000000;
+    height:5px;
+    width: 619px;
+    top:0px; /* Move the container 500px from the top */
+    left:0px; /* Move the container 400px from the left */
+    background-color: #ffffff; /* Example background color */
+    font-family:'Outfit',sans-serif;
+    padding:20px; /* Example padding */
+    border-radius: 20px;
+  }
+
+  .Optimize-text2{
+    font-size: 20px;
+    margin-top:0px;
+  }
+    
+  .input-group1 {
+    display: flex;
+    margin-bottom: 20px;
+    font: size 2px;
+  }
+ 
+  .newgroup{
+    position: absolute;
+    width: 300px;
+    top:340px;
+    left:500px;
+    height:35px;
+  
+
+  }
+  .labelnew{
+    width:100px;
+    position: absolute;
+  }
+  select.selectnew{
+    display: flex;
+    height:35px;
+    margin-left: 100px;
+  }
+  .label1 {
+    width: 200px;
+    margin-bottom: 20px;
+
+    font-size: 16px;
+    
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    flex: 1;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  select{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family:'Outfit',sans-serif;
+  }
+  
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #D50202;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }

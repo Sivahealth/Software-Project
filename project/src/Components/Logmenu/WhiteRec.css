@@ -1,0 +1,231 @@
+
+.body{
+    background-color:#6F75DE;
+}
+
+
+.blue-rectangle{
+
+  background-color: #3237A7; /* Change the color to blue */
+  color: white;
+  padding: 10px;
+  width: 1192px; /* Set a width for the rectangle */
+  height: 600px; /* Set a height for the rectangle */
+  position: absolute; /* Use absolute positioning */
+  top: 50%; /* Move to the center vertically */
+  left: 50%; /* Move to the center horizontally */
+  transform: translate(-50%, -50%); /* Offset by half of its width and height to center it */
+  border-radius: 30px;
+}
+
+
+.login{
+  position: absolute;
+  top: 50%; /* Move the image 50% down from the top */
+  left:300px; /* Move the image 50% from the left */
+  transform: translate(-50%, -50%); /* Center the image */
+  width: 238.5px; /* Example width of the image */
+  height: 214.68px; /* Maintain aspect ratio */
+}
+
+.white-rectangle{
+
+    background-color: white; /* Set background color to white */
+    width: 488px; /* Set the width of the rectangle */
+    height: 450px; /* Set the height of the rectangle */
+    position: absolute; /* Use absolute positioning */
+    top: 50%; /* Center vertically */
+    left: calc(50% + 20px); /* Center horizontally and add offset */
+    transform: translateY(-50%); /* Center vertically */
+    border: 1px solid black; /* Optional: add a border to make it visible*/
+    border-radius: 20px;
+
+}
+.logo{
+    position: absolute;
+    top:48px; /* Move the image 50% down from the top */
+    left:50%;
+    transform: translate(-50%, -50%); /* Center the image */
+    width: 102px; /* Example width of the image */
+    height: 92px; /* Maintain aspect ratio */
+}
+
+.Container{
+    position: absolute; /* Position the container absolutely */
+    text-align: center;
+    height:24px;
+    width: 445px;
+    top:83px; /* Move the container 500px from the top */
+    left:20px; /* Move the container 400px from the left */
+    background-color: #ffffff; /* Example background color */
+    font-family:'Outfit',sans-serif;
+    padding: 0px; /* Example padding */
+}
+
+.Optimize-text{
+    font-weight: bold; /* Make the text bold */
+    font-size: 24px; /* Example font size */
+    color: #333; /* Example text color */
+    
+}
+
+.Optimize-text1{
+    font-size: 20px;
+    padding:20px;
+}
+
+.login-container {
+    position: absolute;
+    height: 150px;
+    color: #000000;
+    left:23px;
+    top:180px;
+    width: 440px;
+    background-color: #ffffff;
+    font-family: 'Outfit', sans-serif;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  .label {
+    display: block;
+    margin-bottom:5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #D50202;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Outfit', sans-serif;
+    margin-top:15px;
+  }
+  
+  button:hover {
+    background-color: #D50202;
+  }
+
+  .login-link{
+    margin-top: 5px;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .login-link a{
+    color: #D50202;
+ }
+
+ .login-link:hover{
+    color:#190dc1;
+ }
+
+ .input-group9 {
+  position: absolute;
+  width: 400px;
+  top: 100px;
+  left: 50%;                /* Move it to the center */
+  transform: translateX(-50%);  /* Shift back by half of its width */
+}
+
+ .add_appointment_white-rectangle-resetpassword{
+    background-color: white; /* Set background color to white */
+    width: 500px; /* Set the width of the rectangle */
+    height: 450px; /* Set the height of the rectangle */
+    position:absolute; /* Use absolute positioning */
+    top: 15%; /* Center vertically */
+    transform: translateY(-50%);
+    left:50%;
+    transform: translateX(-50%);
+    border: 1px solid black; /* Optional: add a border to make it visible*/
+    border-radius: 20px;
+    font-family:'Outfit',sans-serif;
+    color: #000;
+
+ }
+
+ .add_appointment_logo_Container-resetpassword{
+  position: absolute;
+  display: flex;
+  width: 250px;
+  height: 130px;
+  background-color: #ffffff; 
+  justify-content: center;
+  left:125px;
+  top:300px;
+ }
+
+ .button-forgotpassword{
+  position: absolute;
+   width: 250px;
+   top:225px;
+   left:50%;
+   transform: translateX(-50%);
+ }
+ .input-group10{
+  position: absolute;
+  width: 400px;
+  top: 100px;
+  left: 50%;                /* Move it to the center */
+  transform: translateX(-50%);  /* Shift back by half of its width */
+  
+
+ }
+
+ .input-group11{
+  position: absolute;
+  width: 400px;
+  top: 180px;
+  left: 50%;                /* Move it to the center */
+  transform: translateX(-50%);  /* Shift back by half of its width */
+ }
+
+ .button-resetpassword{
+   position: absolute;
+   width: 250px;
+   top:250px;
+   left:50%;
+   transform: translateX(-50%);
+ }
+
+ .add_appointment_logo_Container-resetpasswordnew{
+  position: absolute;
+  display: flex;
+  width: 250px;
+  height: 130px;
+  background-color: #ffffff; 
+  justify-content: center;
+  left:125px;
+  top:315px;
+ }
+
+
+ .white-rectangle-updated{
+    background-color: white; /* Set background color to white */
+    width: 488px; /* Set the width of the rectangle */
+    height: 480px; /* Set the height of the rectangle */
+    position: absolute; /* Use absolute positioning */
+    top: 50%; /* Center vertically */
+    left: calc(50% + 20px); /* Center horizontally and add offset */
+    transform: translateY(-50%); /* Center vertically */
+    border: 1px solid black; /* Optional: add a border to make it visible*/
+    border-radius: 20px;
+
+ }
