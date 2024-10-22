@@ -30,7 +30,7 @@ function Reports() {
 
   useEffect(() => {
     // Fetch reports from the backend
-    axios.get('${process.env.REACT_APP_API_URL}/reports/getreport')
+    axios.get(`${process.env.REACT_APP_API_URL}/api/reports/getreport`)
       .then(response => setReports(response.data))
       .catch(error => console.error('Error fetching reports:', error));
   }, []);

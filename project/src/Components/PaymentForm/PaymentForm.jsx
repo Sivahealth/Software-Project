@@ -37,7 +37,7 @@ function PaymentForm() {
     console.log('Total Amount:', totalAmount);
 
     // Create a payment intent on your backend
-    const response = await axios.post('${process.env.REACT_APP_API_URL}/payments/create-payment-intent', {
+    const response = await axios.post(`${process.env.REACT_APP_API_URL}/api/payments/create-payment-intent`, {
         amount: totalAmount * 100,  // Ensure amount is in cents
       });
 

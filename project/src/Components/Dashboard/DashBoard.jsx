@@ -66,7 +66,7 @@ function DashBoard () {
     };
     const fetchUserCount = async () => {
         try {
-            const response = await axios.get('${process.env.REACT_APP_API_URL}/users/count');
+            const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/users/count`);
             setUserCount(response.data.count);
         } catch (error) {
             console.error('Error fetching user count:', error);
@@ -75,7 +75,7 @@ function DashBoard () {
    
     const fetchappointmentCount = async () => {
       try {
-          const response = await axios.get('${process.env.REACT_APP_API_URL}/appointments/count');
+          const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/appointments/count`);
           setAppointmentCount(response.data.count);
       } catch (error) {
           console.error('Error fetching user count:', error);
@@ -84,7 +84,7 @@ function DashBoard () {
 
   const fetchpatientCount = async () => {
     try {
-        const response = await axios.get('${process.env.REACT_APP_API_URL}/patients/count');
+        const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/patients/count`);
         setPatientCount(response.data.count);
     } catch (error) {
         console.error('Error fetching user count:', error);
@@ -93,7 +93,7 @@ function DashBoard () {
 
 const fetchreportCount = async () => {
   try {
-      const response = await axios.get('${process.env.REACT_APP_API_URL}/reports/count');
+      const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/reports/count`);
       setReportCount(response.data.count);
   } catch (error) {
       console.error('Error fetching user count:', error);

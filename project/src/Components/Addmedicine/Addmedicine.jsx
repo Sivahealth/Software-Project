@@ -60,7 +60,7 @@ const Addmedicine = () => {
         status: formData.status,
       };
       try {
-        const response = await axios.post('${process.env.REACT_APP_API_URL}/medicines/medicines', medicineData);
+        const response = await axios.post(`${process.env.REACT_APP_API_URL}/api/medicines/medicines`, medicineData);
         
         if (response.status === 201) {
           // Handle successful insertion

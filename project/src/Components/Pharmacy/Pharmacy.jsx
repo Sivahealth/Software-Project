@@ -32,14 +32,14 @@ function Pharmacy() {
   useEffect(() => {
     // Fetch medicine data from backend
     axios
-      .get('${process.env.REACT_APP_API_URL}/medicines/getallmedicines')
+      .get(`${process.env.REACT_APP_API_URL}/api/medicines/getallmedicines`)
       .then((response) => setMedicines(response.data))
       .catch((error) => console.error('Error fetching medicines:', error));
   }, []);
 
   const handleStatusChange = async (id, status) => {
     try {
-      await axios.put('${process.env.REACT_APP_API_URL}/medicines/getallmedicines/${id}', { status });
+      await axios.put(`${process.env.REACT_APP_API_URL}/api/medicines/getallmedicines/${id}`, { status });
       // Update status locally after successful API call
       setMedicines((prevMedicines) =>
         prevMedicines.map((med) => (med._id === id ? { ...med, status } : med))

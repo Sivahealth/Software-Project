@@ -72,7 +72,7 @@ function Add_appointment() {
     };
 
     try {
-      const response = await fetch('${process.env.REACT_APP_API_URL}/appointments', {
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/api/appointments`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

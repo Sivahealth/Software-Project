@@ -38,7 +38,7 @@ const SignUpForm = () => {
       return;
     }
     try {
-      const response = await axios.post('${process.env.REACT_APP_API_URL}/register', formData);
+      const response = await axios.post(`${process.env.REACT_APP_API_URL}/api/register`, formData);
       alert(response.data.message);
       // Optionally reset form after successful submission
       setFormData({

@@ -32,7 +32,7 @@ function Add_payment() {
         e.preventDefault();
     
         try {
-          const response = await axios.post('${process.env.REACT_APP_API_URL}/payments/add', formData);
+          const response = await axios.post(`${process.env.REACT_APP_API_URL}/api/payments/add`, formData);
           console.log('Payment added successfully:', response.data);
           alert('Payment added successfully!');
           // Optionally clear the form after submission

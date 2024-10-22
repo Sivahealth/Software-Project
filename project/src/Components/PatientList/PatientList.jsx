@@ -30,7 +30,7 @@ function PatientList () {
 
       useEffect(() => {
         // Fetch appointments from the backend
-        axios.get('${process.env.REACT_APP_API_URL}/patients/admit')
+        axios.get(`${process.env.REACT_APP_API_URL}/api/patients/admit`)
           .then(response => setPatients(response.data))
           .catch(error => console.error('Error fetching appointments:', error));
       }, []);

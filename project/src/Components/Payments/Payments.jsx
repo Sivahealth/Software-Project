@@ -38,7 +38,7 @@ function Payments() {
     document.body.classList.add('activities-background');
 
     // Fetch payment data from the backend
-    axios.get('${process.env.REACT_APP_API_URL}/payments/getpay')
+    axios.get(`${process.env.REACT_APP_API_URL}/api/payments/getpay`)
       .then(response => {
         const paymentData = response.data;
         // Initialize local storage for selected status if not already done
@@ -74,7 +74,7 @@ function Payments() {
       );
   
       // Send the updated status to the backend
-      await axios.put('${process.env.REACT_APP_API_URL}/payments/${paymentId}', { isCompleted: isChecked });
+      await axios.put(`${process.env.REACT_APP_API_URL}/api/payments/${paymentId}`, { isCompleted: isChecked });
     } catch (error) {
       console.error('Error updating payment completion status:', error);
     }

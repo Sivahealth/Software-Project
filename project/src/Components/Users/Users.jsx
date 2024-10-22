@@ -44,7 +44,7 @@ function Users(){
 
       useEffect(() => {
         // Fetch appointments from the backend
-        axios.get('${process.env.REACT_APP_API_URL}/users')
+        axios.get(`${process.env.REACT_APP_API_URL}/api/users`)
           .then(response => setUsers(response.data))
           .catch(error => console.error('Error fetching appointments:', error));
 

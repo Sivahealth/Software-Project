@@ -47,7 +47,7 @@ function Add_doctor() {
     e.preventDefault();
 
     try {
-      const response = await axios.post('${process.env.REACT_APP_API_URL}/doctors', formData);
+      const response = await axios.post(`${process.env.REACT_APP_API_URL}/api/doctors`, formData);
       if (response.status === 201) {
         alert('Doctor added successfully!');
         navigate('/message'); // Navigate to doctors page or any other page

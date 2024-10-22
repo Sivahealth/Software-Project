@@ -44,7 +44,7 @@ function My_appointment() {
   useEffect(() => {
     if (userEmail) {
       // Make an API request to get the doctor by email
-      axios.get('${process.env.REACT_APP_API_URL}/doctors/email/${userEmail}')
+      axios.get(`${process.env.REACT_APP_API_URL}/api/doctors/email/${userEmail}`)
         .then(response => {
           if (response.data && response.data._id) {
             setDoctorId(response.data._id);  // Set doctorId from the doctor database
@@ -66,7 +66,7 @@ function My_appointment() {
   // Fetch appointments based on doctorId
   useEffect(() => {
     if (doctorId) {
-      axios.get('${process.env.REACT_APP_API_URL}/appointments/doctor/${doctorId}')
+      axios.get(`${process.env.REACT_APP_API_URL}/api/appointments/doctor/${doctorId}`)
         .then(response => {
           setAppointments(response.data); // Set the appointments for the logged-in doctor
         })

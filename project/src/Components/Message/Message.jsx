@@ -33,7 +33,7 @@ function Massage(){
       }, []);
       useEffect(() => {
         // Fetch appointments from the backend
-        axios.get('${process.env.REACT_APP_API_URL}/print/doctors')
+        axios.get(`${process.env.REACT_APP_API_URL}/api/print/doctors`)
           .then(response => setDoctors(response.data))
           .catch(error => console.error('Error fetching appointments:', error));
       }, []);
@@ -55,7 +55,7 @@ function Massage(){
       };
       const handleDelete = async (doctorId) => {
         try {
-          await axios.delete('${process.env.REACT_APP_API_URL}/doctors/${doctorId}');
+          await axios.delete(`${process.env.REACT_APP_API_URL}/api/doctors/${doctorId}`);
           // Update the state after deletion
           setDoctors(doctors.filter(doctor => doctor._id !== doctorId));
           setFilteredDoctors(filteredDoctors.filter(doctor => doctor._id !== doctorId));

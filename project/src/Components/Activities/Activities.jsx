@@ -35,7 +35,7 @@ function Activities() {
   };
 
   useEffect(() => {
-    axios.get('${process.env.REACT_APP_API_URL}/')
+    axios.get(`${process.env.REACT_APP_API_URL}/api/`)
       .then(response => {
         setAppointments(response.data);
         setFilteredAppointments(response.data);
@@ -46,7 +46,7 @@ function Activities() {
   const handleView = (appointment) => {
     setSelectedAppointment(appointment);
     if (appointment.doctorId) {
-      axios.get(`${process.env.REACT_APP_API_URL}/doctors/${appointment.doctorId}`)
+      axios.get(`${process.env.REACT_APP_API_URL}/api/doctors/${appointment.doctorId}`)
         .then(response => {
           setDoctorName(response.data.name);
         })

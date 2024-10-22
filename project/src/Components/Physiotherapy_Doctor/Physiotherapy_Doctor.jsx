@@ -66,7 +66,7 @@ function Physiotherapy_Doctor() {
 
   const fetchDoctorsByDate = async (date) => {
     try {
-      const response = await fetch('${process.env.REACT_APP_API_URL}/doctors/by-date', {
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/api/doctors/by-date`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
