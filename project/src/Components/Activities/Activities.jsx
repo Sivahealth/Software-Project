@@ -35,7 +35,7 @@ function Activities() {
   };
 
   useEffect(() => {
-    axios.get('http://localhost:8002/api/')
+    axios.get('${process.env.REACT_APP_API_URL}/')
       .then(response => {
         setAppointments(response.data);
         setFilteredAppointments(response.data);
@@ -46,7 +46,7 @@ function Activities() {
   const handleView = (appointment) => {
     setSelectedAppointment(appointment);
     if (appointment.doctorId) {
-      axios.get(`http://localhost:8002/api/doctors/${appointment.doctorId}`)
+      axios.get('${process.env.REACT_APP_API_URL}/doctors/${appointment.doctorId}')
         .then(response => {
           setDoctorName(response.data.name);
         })
@@ -66,7 +66,7 @@ function Activities() {
 
   const handleDelete = async (appointmentId) => {
     try {
-      await axios.delete(`http://localhost:8002/api/appointments/delete/${appointmentId}`);
+      await axios.delete('${process.env.REACT_APP_API_URL}/appointments/delete/${appointmentId}');
       setAppointments(appointments.filter(appointment => appointment._id !== appointmentId));
       setFilteredAppointments(filteredAppointments.filter(appointment => appointment._id !== appointmentId));
     } catch (error) {

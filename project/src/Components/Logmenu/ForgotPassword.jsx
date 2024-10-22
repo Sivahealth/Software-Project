@@ -16,7 +16,7 @@ const ForgotPassword = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-        await axios.post('http://localhost:8002/api/forgot-password', { email });
+        await axios.post('${process.env.REACT_APP_API_URL}/forgot-password', { email });
         alert('Reset code sent successfully. You will be redirected to reset your password.');
         // Navigate to the ResetPassword component after a short delay
         setTimeout(() => {

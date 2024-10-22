@@ -42,7 +42,7 @@ const Newaddreport = () => {
     // Fetch doctor names from the database
     const fetchDoctors = async () => {
       try {
-        const response = await axios.get('http://localhost:8002/api/print/doctors'); // Adjust the endpoint accordingly
+        const response = await axios.get('${process.env.REACT_APP_API_URL}/print/doctors'); // Adjust the endpoint accordingly
         if (response.data) {
           setDoctors(response.data); // Store the fetched doctor data in the state
         }
@@ -67,7 +67,7 @@ const Newaddreport = () => {
         reportTitle:formData.reportTitle
     };
     try {
-      const response = await fetch('http://localhost:8002/api/reports', {
+      const response = await fetch('${process.env.REACT_APP_API_URL}/reports', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
