@@ -12,10 +12,20 @@ import axios from 'axios';
 
 function Reports() {
   const [reports, setReports] = useState([]);
+  const [filteredReports, setFilteredReports] = useState([]);
   const navigate = useNavigate(); 
 
   const handleSearch = (searchTerm) => {
-    // Implement your search logic here if needed
+    if (searchTerm) {
+      const filtered = reports.filter((report) =>
+        report.patientName.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        report.doctorName.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        report.contactNumber.includes(searchTerm)
+      );
+      setFilteredReports(filtered);
+    } else {
+      setFilteredReports(reports); // If search is empty, show all reports
+    }
   };
 
   useEffect(() => {
@@ -31,7 +41,10 @@ function Reports() {
   useEffect(() => {
     // Fetch reports from the backend
     axios.get(`${process.env.REACT_APP_API_URL}/api/reports/getreport`)
-      .then(response => setReports(response.data))
+      .then(response => {
+        setReports(response.data);
+        setFilteredReports(response.data); // Initialize filtered reports with all data
+      })
       .catch(error => console.error('Error fetching reports:', error));
   }, []);
 
@@ -85,7 +98,7 @@ function Reports() {
               </tr>
             </thead>
             <tbody>
-              {reports.map(report => (
+              {filteredReports.map(report => (
                 <tr key={report._id}>
                   <td>{report.patientName}</td>
                   <td>{report.doctorName}</td>

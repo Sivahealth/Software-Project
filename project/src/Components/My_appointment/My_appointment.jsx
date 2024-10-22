@@ -12,6 +12,7 @@ function My_appointment() {
   const [appointments, setAppointments] = useState([]);
   const [doctorId, setDoctorId] = useState(null);
   const navigate = useNavigate();
+  const [filteredAppointments, setFilteredAppointments] = useState([]);
 
   // Fetch logged-in user data from local storage
   const storedUserData = JSON.parse(localStorage.getItem('user'));
@@ -75,8 +76,22 @@ function My_appointment() {
   }, [doctorId]);
 
   const handleSearch = (searchTerm) => {
-    // Implement search functionality
+    if (searchTerm.trim() === '') {
+      setFilteredAppointments(appointments); // Reset to full list if search is cleared
+    } else {
+      const filtered = appointments.filter(appointment =>
+        appointment.firstName.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        appointment.lastName.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        appointment.department.toLowerCase().includes(searchTerm.toLowerCase())
+      );
+      setFilteredAppointments(filtered);
+    }
   };
+  
+  useEffect(() => {
+    setFilteredAppointments(appointments); // Initialize with full appointment list
+  }, [appointments]);
+  
 
   return (
     <div className='maindash'>
@@ -118,7 +133,7 @@ function My_appointment() {
               </tr>
             </thead>
             <tbody>
-              {appointments.map(appointment => (
+              {filteredAppointments.map(appointment => (
                 <tr key={appointment._id}>
                   <td>{appointment.firstName}</td>
                   <td>{appointment.lastName}</td>

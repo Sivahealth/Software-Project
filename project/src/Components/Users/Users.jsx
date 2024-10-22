@@ -39,7 +39,12 @@ function Users(){
       }, []);
 
       const handleSearch = (searchTerm) => {
-      
+        const filtered = users.filter((user) =>
+          user.firstName.toLowerCase().includes(searchTerm.toLowerCase()) ||
+          user.lastName.toLowerCase().includes(searchTerm.toLowerCase()) ||
+          user.status.toLowerCase().includes(searchTerm.toLowerCase())
+        );
+        setUsers(filtered);
       };
 
       useEffect(() => {

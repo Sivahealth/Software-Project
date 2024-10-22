@@ -29,7 +29,9 @@ function Activities() {
 
   const handleSearch = (searchTerm) => {
     const filtered = appointments.filter((item) =>
-      item.appointment.toLowerCase().includes(searchTerm.toLowerCase())
+      item.firstName.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      item.lastName.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      item.contactNumber.includes(searchTerm) // Assuming contact number is a string of digits
     );
     setFilteredAppointments(filtered);
   };

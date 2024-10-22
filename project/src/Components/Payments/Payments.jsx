@@ -30,7 +30,12 @@ function Payments() {
   }, [navigate]);
 
   const handleSearch = (searchTerm) => {
-    // Handle the search logic here if needed
+    const filtered = payments.filter((payment) =>
+      payment.employeeName.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      payment.accountNumber.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      payment.selectedStatus.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+    setPayments(filtered);
   };
 
   useEffect(() => {
