@@ -46,7 +46,7 @@ function Activities() {
   const handleView = (appointment) => {
     setSelectedAppointment(appointment);
     if (appointment.doctorId) {
-      axios.get('${process.env.REACT_APP_API_URL}/doctors/${appointment.doctorId}')
+      axios.get(`${process.env.REACT_APP_API_URL}/doctors/${appointment.doctorId}`)
         .then(response => {
           setDoctorName(response.data.name);
         })
@@ -66,7 +66,7 @@ function Activities() {
 
   const handleDelete = async (appointmentId) => {
     try {
-      await axios.delete('${process.env.REACT_APP_API_URL}/appointments/delete/${appointmentId}');
+      await axios.delete(`${process.env.REACT_APP_API_URL}/appointments/delete/${appointmentId}`);
       setAppointments(appointments.filter(appointment => appointment._id !== appointmentId));
       setFilteredAppointments(filteredAppointments.filter(appointment => appointment._id !== appointmentId));
     } catch (error) {
